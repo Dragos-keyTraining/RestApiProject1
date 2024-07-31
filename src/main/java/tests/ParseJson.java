@@ -46,7 +46,10 @@ public class ParseJson {
 		
 		System.out.println(jsonPath.getString("[0]"));
 		System.out.println(jsonPath.getString("[0].employee.company"));
+
 		//comment pentru git pe master
+		//comment for git
+
 	}
 	
 	
