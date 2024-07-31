@@ -1,6 +1,5 @@
 package tests;
 
-import org.codehaus.groovy.control.customizers.builder.PostCompletionFactory;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertTrue;

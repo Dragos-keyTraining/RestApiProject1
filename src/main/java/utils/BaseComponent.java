@@ -1,13 +1,19 @@
 package utils;
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
+import groovyjarjarasm.asm.commons.Method;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
-public class BaseComponent {
+public class BaseComponent  {
 
 	@BeforeClass
 	public void setup() {
@@ -67,7 +73,5 @@ public class BaseComponent {
 				extract().response();
 	return response;
 }
-	
-	
 	
 }
